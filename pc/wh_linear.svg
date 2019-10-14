@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="568px" height="243px" viewBox="0 0 568 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>wh_linear</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="66.9926021%" id="linearGradient-1">
+            <stop stop-color="#EEEEEE" stop-opacity="0.498743444" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.0327219203" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="wh_linear" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.64625186">
+        <path d="M0,142.686848 C66.3333333,82.8956159 163.5,53 291.5,53 C419.5,53 511.666667,82.8956159 568,142.686848 L568,293 L0,293 L0,142.686848 Z" id="Rectangle" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

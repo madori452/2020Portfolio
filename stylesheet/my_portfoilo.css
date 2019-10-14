@@ -1,0 +1,408 @@
+*{
+  /* border: 1px solid #ddd; */
+}
+
+html{
+  font-family: 'arial';
+  background-color: rgba(250, 248, 255, 0.4);
+}
+
+.navbar{
+  box-shadow: 2px 2px 5px rgba(#000, #000, #000, 0.6) !important;
+  padding: 0px 0px !important;
+}
+.navbar .nav_hover:hover{
+  color: #f69b8f !important;
+  transition: 0.5s;
+}
+li.nav_li{
+  overflow: hidden;
+}
+
+li.nav_li:hover:after {
+    opacity: 1;
+    transform: translate(0%,0%);
+}
+li.nav_li:after{
+  display: block;
+  position: relative;
+  content: '';
+  z-index: 8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+  border-bottom: 4px solid #ff886d;
+  transform: translate(-100%,0%);
+}
+section{
+  position: relative;
+  overflow: hidden;
+}
+.portfoilo_cover{
+  background-image: url('../pc/bg_cover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+button:focus{
+  outline: none !important;
+}
+.text-title{
+  letter-spacing: 2.14px;
+}
+.portfoilo_cover .btn_primary{
+  animation: bigsmall 1.5s infinite alternate;
+}
+
+img.bg_spark01{
+  animation: fadeIn 1s infinite alternate;
+}
+img.bg_spark02{
+  animation: fadeIn 0.8s 1s infinite alternate;
+  transform: rotate(135deg);
+}
+img.img-monster-castel, img.img-monster {
+    animation: rotate 2s 1s infinite alternate;
+}
+/* portfoilo_cover */
+.portfoilo_cover p{
+  background-color: rgba(250, 248, 255, 0.4);
+  padding: 10px;
+}
+/* section_experience */
+.experience p{
+  margin-bottom: 17px;
+}
+
+.experience h4:after, .ability h4.h3:after{
+  display: block;
+  position: absolute;
+  font-size: 80px;
+  color: rgba(203,203,203,0.2);
+}
+.experience h4:after{
+ content: 'Experience';
+ top: 30px;
+ z-index: -1;
+}
+
+.ability h4.h3:after{
+  content: 'Ability';
+  top: 0px;
+  left: calc(50% - 120px);
+}
+img.cloud01{
+  width: 180px;
+   animation: cloud  6s  linear infinite alternate;
+   z-index: 1;
+}
+img.cloud02{
+  width: 120px;
+   animation: cloud  6s  1s linear infinite alternate;
+}
+
+
+.experience span{
+  display: inline-block;
+  width: 75px;
+}
+/* section_ability */
+.ability p{
+  line-height: 1.54;
+  margin-top: 11px;
+  text-align: center;
+}
+img.item-ability{
+  max-width: 150px;
+}
+img.castel{
+   animation: castel 1.5s linear infinite  alternate;
+   z-index: 2;
+}
+  .card{
+    margin-bottom: 30px;
+  }
+
+.work_01 span{
+  margin-right: 5px;
+}
+img.work01{
+ width: 80%;
+}
+/* section_ui_prototype */
+.ui_prototype{
+   background-image: url('../pc/bg-ui.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.carousel-indicators li.indicators_personal {
+   width: 60px;
+  height: 9px;
+  background-color: #cccc;
+  cursor: pointer;
+}
+.carousel-item{
+  height: 600px;
+}
+img.cloud03{
+  width: 100px;
+  animation: cloud  6s  linear infinite alternate;
+}
+
+.carousel-indicators .active {
+    
+    background-color: #f69b8f !important;
+}
+/* video */
+img.ui_bg{
+  height: 600px;
+  z-index: 1;
+}
+video {
+   position: absolute;
+   z-index: 2;
+   top:calc( 50% - 232px); 
+   left:calc( 50% - 122px);
+}
+video.video_rwd{
+  width: auto;
+  height: 450px;
+}
+/* contact */
+.contact{
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contact .card{
+  max-width: 580px;
+  position: relative;
+  z-index: 2;
+}
+
+img.img-solcial{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+img.img-monster{
+  width: 170px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+img.wh_bg_linear{
+  position: absolute;
+  width: 100%;
+  top:20%;
+  opacity: 0.3;
+  z-index: 1;
+}
+.contact img.bg_spark01, .contact img.bg_spark02{
+  width: 500px;
+}
+.contact img.bg_spark02{
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  transform: rotate(0deg);
+}
+/* keyframes------- */
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+@keyframes castel{
+  0%{
+    transform: translate(0px,0px);
+  }
+  100%{
+    transform: translate(0px,20px);
+  }
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+@keyframes cloud{
+  0% {
+     transform: translate(0, 0);
+    }
+
+    100% {
+       transform: translate(40px, -40px);
+    }
+}
+@keyframes bigsmall{
+  0%{
+    transform:  scale(0.8 );
+  }
+
+  100%{
+    transform:  scale(1);
+  }
+}
+@media(max-width:1024px){
+    .carousel-item {
+        height: 400px;
+    }
+    img.ui_bg {
+        height: 350px;
+        z-index: 1;
+    }
+    video.video_rwd {
+        width: auto;
+        height: 266px;
+    }
+    video {
+    top: calc( 50% - 160px);
+    left: calc( 50% - 70px);
+    }
+}
+@media (max-width: 768px) { 
+  .navbar-expand-lg > .container{
+    width: 90%;
+  }
+  .experience h4:after, .ability h4.h3:after{
+    display: none;
+  }
+  h3, .h3{
+    font-size: 28px !important;
+  }
+  img.img-monster-castel{
+    width: 88px;
+  }
+  img.cloud01{
+    width: 120px;
+  }
+  img.cloud02{
+    width: 80px;
+  }
+  .experience span{
+    display: block;
+  }
+  .experience p{
+    line-height: 20px;
+  }
+  .ability h4.h3:after{
+    top: 0px;
+    left: 33%;
+  }
+  .experience h4:after{
+    top: -50px;
+    }
+  .ability_all img{
+    max-width: 100px;
+    height: auto;
+  }
+  span.display-3{
+    font-size: 36px;
+  }
+  
+  /* video */
+  img.ui_bg{
+    height: 350px;
+    z-index: 1;
+    margin-top: -40px;
+  }
+  video {
+    top: calc( 50% - 200px);
+    left: calc( 50% - 72px);
+  }
+
+
+
+ }
+
+ @media (max-width: 414px){
+   .container{
+     width: 80% !important;
+   }
+    h3, .h3{
+    font-size: 24px !important;
+    }
+    .portfoilo_cover h1{
+      margin-top: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .portfoilo_cover p{
+      text-align: center;
+      background-color: rgba(250, 248, 255, 0.64);
+    }
+    .ui_prototype{
+      background-image: url(../pc/bg_ui_414.png);
+    }
+    
+    .portfoilo_cover {
+    background-image: url(../pc/bg_cover_414.png);
+    }
+    img.castel{
+      width: 300px;
+      margin: 30px 0 0 0;
+    }
+
+    .portfoilo_cover .btn_primary, .my_work_01, .list-group-item.active{
+      display: block;
+      margin: 0 auto;
+    }
+    img.img-monster-castel{
+      width: 102px;
+    }
+    .experience h4{
+      margin-bottom: 20px;
+    }
+    .experience span{
+      margin-bottom: 5px;
+    }
+    .ability_all img{
+      max-width: 145px;
+    }
+    .ability p{
+      padding: 0 40px;
+    }
+    img.work01 {
+     width: 90%;
+   }
+   img.cloud03{
+     display: none;
+   }
+   video {
+    top: calc( 50% - 137px);
+  }
+   .work_01 p{
+     padding-bottom: 10px;
+   }
+   .ui_content {
+     margin-top: 40px;
+   }
+   .carousel-item {
+    height: 270px;
+    margin-bottom: 30px;
+  }
+  img.img-monster{
+    right: -20px;
+    bottom: -30px;
+    width: 120px;
+  }
+
+ }
